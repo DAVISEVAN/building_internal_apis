@@ -5,5 +5,6 @@ FactoryBot.define do
     genre { Faker::Book.genre }
     summary { Faker::Lorem.paragraph }
     number_sold { Faker::Number.within(range: 1..1000) }
+    popularity { nil }
   end
 end
